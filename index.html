@@ -7,10 +7,16 @@
 <meta name="description" content="One keystroke sends a screenshot of whatever you're stuck on into the AI chat you already have open — ChatGPT, Claude, Gemini and more. Free for Mac.">
 <meta property="og:title" content="ShowAI — Show, don't explain.">
 <meta property="og:description" content="One keystroke sends a screenshot into the AI chat you already have open. Free for Mac.">
-<meta property="og:image" content="assets/icon.png">
+<meta property="og:image" content="https://jayz6.github.io/showai-website/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://jayz6.github.io/showai-website/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jayz6.github.io/showai-website/assets/og.png">
 <meta name="theme-color" content="#1a1240">
 <link rel="icon" href="assets/favicon.png">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span><span class="a4"></span></div>
@@ -45,7 +51,7 @@
     <a class="btn" href="#install">Install free for Mac</a>
     <a class="btn btn-ghost" href="#demo">Watch it work ↓</a>
   </div>
-  <p class="fine">macOS 14+ · Apple Silicon · Works with ChatGPT, Claude, Gemini and more</p>
+  <p class="fine">Free · macOS 14+ on Apple Silicon · <b>Needs Google Chrome</b> or the ChatGPT/Claude app</p>
 
   <!-- Animated product demo, built in HTML/CSS (no video) -->
   <div class="demo" id="demo" role="img" aria-label="Animation: an error in a terminal, the keys Command Shift L are pressed, a screenshot flies into an AI chat, and a question is typed.">
@@ -136,10 +142,7 @@ Build failed after 4.21s</pre>
   <div class="cases">
     <article class="case"><span class="tag">Developers</span><h3>That cryptic error</h3><p>Stack traces, failing builds, red squiggles. Show the AI the exact output instead of retyping it.</p></article>
     <article class="case"><span class="tag">Designers</span><h3>"Does this look right?"</h3><p>Get feedback on a layout, spacing or colours — the AI sees the real thing, not your description.</p></article>
-    <article class="case"><span class="tag">Data & spreadsheets</span><h3>A chart that won't behave</h3><p>Show the sheet, the formula and the result in one go. Ask what's wrong.</p></article>
-    <article class="case"><span class="tag">Students</span><h3>A problem you can't crack</h3><p>Show the question or diagram and keep working through it in the same conversation.</p></article>
     <article class="case"><span class="tag">Everyone</span><h3>Settings and apps</h3><p>"Where is this option?" Show the screen you're on and get step-by-step help.</p></article>
-    <article class="case"><span class="tag">Writers</span><h3>Docs and drafts</h3><p>Show a paragraph, a slide or an email and ask for a sharper version.</p></article>
   </div>
 </section>
 
@@ -193,7 +196,7 @@ Build failed after 4.21s</pre>
       <h2>Your screen stays yours.</h2>
     </div>
     <ul>
-      <li><b>Nothing leaves your Mac.</b> No account, no analytics, no tracking.</li>
+      <li><b>ShowAI sends nothing to us.</b> Your screenshot goes only to the AI chat you choose. No account, no analytics, no tracking.</li>
       <li><b>Only when you ask.</b> It captures one window, only when you press the hotkey.</li>
       <li><b>Never saved.</b> Screenshots live in memory and your clipboard — never on disk.</li>
       <li><b>One network request.</b> A daily update check you can switch off.</li>
@@ -210,7 +213,7 @@ Build failed after 4.21s</pre>
     <code id="cmd">curl -fsSL https://github.com/jayz6/showai-releases/releases/latest/download/install.sh | sh</code>
     <button class="copy" type="button" data-copy="#cmd">Copy</button>
   </div>
-  <p class="fine">Installs to Applications · no “can't be opened” warning · updates itself · macOS 14+ on Apple Silicon</p>
+  <p class="fine">Requires <b>Google Chrome</b> (or the ChatGPT/Claude app) · macOS 14+ on Apple Silicon · installs to Applications · updates itself</p>
   <div class="setforget">
     <div><b>Set it and forget it</b><span>Menu › Launch at Login. That's the last thing you'll ever configure.</span></div>
     <a href="https://github.com/jayz6/showai-releases#readme">Full guide →</a>
@@ -236,7 +239,7 @@ Build failed after 4.21s</pre>
 
 <footer class="footer">
   <div><img src="assets/favicon.png" alt="" width="18" height="18"> ShowAI — made for people who'd rather ask than explain.</div>
-  <div class="f-links"><a href="https://github.com/jayz6/showai-releases#readme">Guide</a><a href="https://github.com/jayz6/showai-releases/releases">Releases</a><a href="#privacy">Privacy</a></div>
+  <div class="f-links"><a href="https://github.com/jayz6/showai-releases#readme">Guide</a><a href="https://github.com/jayz6/showai-releases/releases">Releases</a><a href="privacy.html">Privacy policy</a><a href="https://github.com/jayz6/showai-releases/issues">Contact</a></div>
 </footer>
 
 <script src="script.js?v=2" defer></script>

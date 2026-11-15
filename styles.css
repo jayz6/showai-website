@@ -254,7 +254,7 @@ h3 { font-size: 21px; letter-spacing: -0.01em; margin: 12px 0 8px; position: rel
   border: 1px solid rgba(255, 255, 255, 0.45); box-shadow: var(--glass-shadow), 0 0 60px rgba(123, 92, 255, 0.35);
 }
 .usecase kbd { font-size: 0.82em; }
-.uc-label { display: inline-block; margin-right: 8px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700;
+.uc-label { display: block; width: max-content; margin: 0 auto 8px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700;
   letter-spacing: .06em; text-transform: uppercase; vertical-align: 2px; color: var(--base); background: #fff; }
 .gains { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; max-width: 900px; margin: 22px auto 0; text-align: left; }
 .gain { position: relative; padding: 18px 20px; border-radius: 20px; background: var(--glass-bg);
@@ -265,3 +265,16 @@ h3 { font-size: 21px; letter-spacing: -0.01em; margin: 12px 0 8px; position: rel
 @media (prefers-reduced-transparency: reduce) {
   .usecase, .gain { -webkit-backdrop-filter: none; backdrop-filter: none; background: #2a1f63; }
 }
+
+/* ---------- Document pages (privacy policy) ---------- */
+.doc { max-width: 760px; margin: 0 auto; padding: 72px max(20px, env(safe-area-inset-left)) 90px; }
+.doc-title { font-size: clamp(36px, 6vw, 60px); margin: 8px 0 10px; }
+.doc-updated { color: var(--faint); font-size: 14px; margin: 0 0 40px; }
+.doc section { position: relative; margin: 0 0 18px; padding: 24px 28px; border-radius: 22px; background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); border: 1px solid var(--glass-edge); box-shadow: var(--glass-shadow); }
+.doc h2 { font-size: 21px; margin: 0 0 8px; text-align: left; }
+.doc p, .doc li { color: var(--muted); font-size: 16px; }
+.doc p { margin: 0 0 10px; } .doc p:last-child { margin-bottom: 0; }
+.doc ul { margin: 0 0 10px; padding-left: 20px; display: grid; gap: 8px; }
+.doc b { color: #fff; } .doc a { color: #d9d0ff; }
+@media (prefers-reduced-transparency: reduce) { .doc section { -webkit-backdrop-filter: none; backdrop-filter: none; background: #2a1f63; } }
