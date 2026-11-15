@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ShowAI — Show your AI what you're stuck on</title>
+<meta name="description" content="One keystroke sends a screenshot of whatever you're stuck on into the AI chat you already have open — ChatGPT, Claude, Gemini and more. Free for Mac.">
+<meta property="og:title" content="ShowAI — Show, don't explain.">
+<meta property="og:description" content="One keystroke sends a screenshot into the AI chat you already have open. Free for Mac.">
+<meta property="og:image" content="assets/icon.png">
+<meta name="theme-color" content="#0a0a12">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><img src="assets/favicon.png" alt="" width="22" height="22"> ShowAI</a>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#use-cases">Use cases</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="#install">Get ShowAI</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <img class="hero-icon" src="assets/icon.png" alt="ShowAI app icon: a camera with a flash" width="148" height="148">
+  <h1>Show, don't explain.</h1>
+  <p class="lede">One keystroke sends a screenshot of whatever you're stuck on straight into the AI chat you already have open — so it sees exactly what you see, and still remembers your conversation.</p>
+  <div class="cta-row">
+    <a class="btn" href="#install">Install free for Mac</a>
+    <a class="btn btn-ghost" href="#demo">Watch it work ↓</a>
+  </div>
+  <p class="fine">macOS 14+ · Apple Silicon · Works with ChatGPT, Claude, Gemini and more</p>
+
+  <!-- Animated product demo, built in HTML/CSS (no video) -->
+  <div class="demo" id="demo" role="img" aria-label="Animation: an error in a terminal, the keys Command Shift L are pressed, a screenshot flies into an AI chat, and a question is typed.">
+    <div class="desk">
+      <div class="win term">
+        <div class="bar"><i></i><i></i><i></i><span>Terminal</span></div>
+        <pre><b>$ swift test</b>
+Building for debugging…
+<em>error:</em> plugin for module 'TestingMacros'
+       not found
+  4 | @Test func parsesHeaders() {
+    |  <em>`- error: macro not found</em>
+<em>error: fatalError</em>
+Build failed after 4.21s</pre>
+        <div class="flash"></div>
+      </div>
+      <div class="win chat">
+        <div class="bar"><i></i><i></i><i></i><span>Your AI chat</span></div>
+        <div class="msgs">
+          <div class="m me">My package won't build after I added tests 😩</div>
+          <div class="m">Can you show me the exact error?</div>
+          <div class="m me sent"><span class="mini-shot"></span>Why does this fail?</div>
+          <div class="m reply">The test target can't load the macro plugin. Add <code>-plugin-path</code>…</div>
+        </div>
+        <div class="composer">
+          <span class="thumb"></span>
+          <span class="typed">Why does this fail?</span>
+        </div>
+      </div>
+      <div class="fly"></div>
+    </div>
+    <div class="keys" aria-hidden="true"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>L</kbd></div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section light" id="features">
+  <p class="eyebrow">Features</p>
+  <h2>Everything it takes to ask better, <br>nothing you have to manage.</h2>
+  <div class="features">
+    <article class="feature big">
+      <div class="f-icon">⌘</div>
+      <h3>One keystroke</h3>
+      <p>Press <kbd>⌘</kbd><kbd>⇧</kbd><kbd>L</kbd> anywhere. The window you're looking at is captured and pasted — no files, no dragging, no attaching.</p>
+    </article>
+    <article class="feature big">
+      <div class="f-icon">💬</div>
+      <h3>Lands in your existing chat</h3>
+      <p>Not a new conversation. ShowAI brings your open chat forward, so the AI keeps every bit of context you've already given it.</p>
+    </article>
+    <article class="feature">
+      <div class="f-icon">✦</div>
+      <h3>Any AI chat</h3>
+      <p>ChatGPT, Claude, Gemini, Perplexity, Copilot, Grok, DeepSeek and more — or add your own.</p>
+    </article>
+    <article class="feature">
+      <div class="f-icon">◎</div>
+      <h3>Never the wrong chat</h3>
+      <p>It checks the right tab is really in front before pasting — and stops rather than guess.</p>
+    </article>
+    <article class="feature">
+      <div class="f-icon">⬚</div>
+      <h3>Window or area</h3>
+      <p>Grab the whole window, or add <kbd>⌥</kbd> to drag any part of the screen.</p>
+    </article>
+    <article class="feature">
+      <div class="f-icon">🔒</div>
+      <h3>Private by design</h3>
+      <p>Screenshots stay in memory, never on disk. No account. No tracking.</p>
+    </article>
+    <article class="feature">
+      <div class="f-icon">↻</div>
+      <h3>Updates itself</h3>
+      <p>Signed automatic updates. Set it up once and forget it's there.</p>
+    </article>
+    <article class="feature">
+      <div class="f-icon">⚡</div>
+      <h3>Lives in your menu bar</h3>
+      <p>No Dock icon, no windows in your way. Pin a chat, change the hotkey, done.</p>
+    </article>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="section" id="use-cases">
+  <p class="eyebrow">Use cases</p>
+  <h2>Whatever you're stuck on, <br>show it in a second.</h2>
+  <div class="cases">
+    <article class="case"><span class="tag">Developers</span><h3>That cryptic error</h3><p>Stack traces, failing builds, red squiggles. Show the AI the exact output instead of retyping it.</p></article>
+    <article class="case"><span class="tag">Designers</span><h3>"Does this look right?"</h3><p>Get feedback on a layout, spacing or colours — the AI sees the real thing, not your description.</p></article>
+    <article class="case"><span class="tag">Data & spreadsheets</span><h3>A chart that won't behave</h3><p>Show the sheet, the formula and the result in one go. Ask what's wrong.</p></article>
+    <article class="case"><span class="tag">Students</span><h3>A problem you can't crack</h3><p>Show the question or diagram and keep working through it in the same conversation.</p></article>
+    <article class="case"><span class="tag">Everyone</span><h3>Settings and apps</h3><p>"Where is this option?" Show the screen you're on and get step-by-step help.</p></article>
+    <article class="case"><span class="tag">Writers</span><h3>Docs and drafts</h3><p>Show a paragraph, a slide or an email and ask for a sharper version.</p></article>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section dark" id="problem">
+  <p class="eyebrow">The problem</p>
+  <h2>Explaining a screen in words <br>is slow. Showing it should be instant.</h2>
+  <div class="compare">
+    <div class="col before">
+      <h3>Today</h3>
+      <ol>
+        <li>Take a screenshot</li>
+        <li>Find the file</li>
+        <li>Switch to your browser</li>
+        <li>Find the right chat tab</li>
+        <li>Attach the image</li>
+        <li>Explain what you're looking at</li>
+        <li>…or start a new chat and lose your context</li>
+      </ol>
+    </div>
+    <div class="col after">
+      <h3>With ShowAI</h3>
+      <div class="one">
+        <span class="kbds"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>L</kbd></span>
+        <p>The screenshot is already in your chat. <br>Just ask your question.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section light" id="how">
+  <p class="eyebrow">How it works</p>
+  <h2>Two minutes to set up. <br>Then it just works.</h2>
+  <div class="steps">
+    <div class="step"><span class="n">1</span><h3>Install</h3><p>Paste one line into Terminal. ShowAI lands in Applications and starts.</p></div>
+    <div class="step"><span class="n">2</span><h3>Allow</h3><p>Grant Screen Recording and Accessibility in the welcome window. Each turns green as you go.</p></div>
+    <div class="step"><span class="n">3</span><h3>Press ⌘⇧L</h3><p>In any app. Your screenshot appears in your chat, cursor ready for your question.</p></div>
+  </div>
+  <div class="chips" aria-label="Supported AI chats">
+    <span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Google AI Studio</span><span>Perplexity</span><span>Microsoft Copilot</span><span>Grok</span><span>DeepSeek</span><span>Mistral Le Chat</span><span>Meta AI</span><span>Poe</span><span>Qwen</span><span>Kimi</span><span class="plus">+ any site you add</span>
+  </div>
+  <p class="note">Chrome tabs and the ChatGPT and Claude desktop apps. ShowAI never sends a message for you.</p>
+</section>
+
+<!-- PRIVACY -->
+<section class="section" id="privacy">
+  <div class="privacy">
+    <div>
+      <p class="eyebrow">Privacy</p>
+      <h2>Your screen stays yours.</h2>
+    </div>
+    <ul>
+      <li><b>Nothing leaves your Mac.</b> No account, no analytics, no tracking.</li>
+      <li><b>Only when you ask.</b> It captures one window, only when you press the hotkey.</li>
+      <li><b>Never saved.</b> Screenshots live in memory and your clipboard — never on disk.</li>
+      <li><b>One network request.</b> A daily update check you can switch off.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- INSTALL -->
+<section class="section dark install" id="install">
+  <img src="assets/icon.png" alt="" width="96" height="96" class="install-icon">
+  <h2>Get ShowAI. It's free.</h2>
+  <p class="lede">Open Terminal, paste this, press Return.</p>
+  <div class="cmd">
+    <code id="cmd">curl -fsSL https://github.com/jayz6/showai-releases/releases/latest/download/install.sh | sh</code>
+    <button class="copy" type="button" data-copy="#cmd">Copy</button>
+  </div>
+  <p class="fine">Installs to Applications · no “can't be opened” warning · updates itself · macOS 14+ on Apple Silicon</p>
+  <div class="setforget">
+    <div><b>Set it and forget it</b><span>Menu › Launch at Login. That's the last thing you'll ever configure.</span></div>
+    <a href="https://github.com/jayz6/showai-releases#readme">Full guide →</a>
+  </div>
+  <p class="fine alt">Prefer a download? <a href="https://github.com/jayz6/showai-releases/releases/latest/download/ShowAI.zip">ShowAI.zip</a> — unzip, move to Applications, then System Settings › Privacy &amp; Security › Open Anyway the first time.</p>
+</section>
+
+<!-- FAQ -->
+<section class="section light" id="faq">
+  <p class="eyebrow">FAQ</p>
+  <h2>Questions, answered.</h2>
+  <div class="faq">
+    <details><summary>Does it send my message?</summary><p>Never. ShowAI only pastes the image. You type your question and press Enter.</p></details>
+    <details><summary>Which chat does the screenshot go to?</summary><p>A chat you pinned in the menu; otherwise the only open chat, or the one you used last. The menu always shows “Sending to: …”.</p></details>
+    <details><summary>Is it really free?</summary><p>Yes. A Pro tier for AI agents and privacy controls is planned; the hotkey stays free.</p></details>
+    <details><summary>What do the permissions do?</summary><p>Screen Recording takes the screenshot. Accessibility presses ⌘V and brings the chat forward. Chrome control (optional) switches to your chat tab.</p></details>
+    <details><summary>Safari, Arc, Firefox, Intel Macs?</summary><p>Not yet — Google Chrome plus the ChatGPT and Claude apps, on Apple Silicon Macs.</p></details>
+    <details><summary>How do I uninstall it?</summary><p>Quit it from the menu bar and delete it from Applications. Optionally run <code>defaults delete app.showai.ShowAI</code>.</p></details>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div><img src="assets/favicon.png" alt="" width="18" height="18"> ShowAI — made for people who'd rather ask than explain.</div>
+  <div class="f-links"><a href="https://github.com/jayz6/showai-releases#readme">Guide</a><a href="https://github.com/jayz6/showai-releases/releases">Releases</a><a href="#privacy">Privacy</a></div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
